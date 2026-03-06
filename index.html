@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Madhavi Ladies Boutique</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background-image:url("");
+background-size:cover;
+background-attachment:fixed;
+}
+
+/* HEADER */
+
+header{
+background:rgba(204,0,102,0.9);
+color:white;
+text-align:center;
+padding:25px;
+font-size:35px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.hero{
+width:100%;
+height:auto;
+display: block;
+margin:auto;
+}
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:left center;
+}
+/* CATEGORY SECTION */
+
+.categories{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+background:transparent;
+padding:20px;
+}
+
+.categories button{
+padding:12px 20px;
+border:none;
+background:#ff4da6;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.categories button:hover{
+background:#cc0066;
+}
+
+/* ABOUT */
+
+.about{
+background:rgba(255,255,255,0.9);
+width:70%;
+margin:auto;
+margin-top:20px;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+/* IMAGE GALLERY */
+
+.gallery{
+display:none;
+text-align:center;
+padding:20px;
+}
+
+.gallery img{
+width:200px;
+height:260px;
+object-fit:cover;
+margin:12px;
+border-radius:10px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* FORM */
+
+.formbox{
+display:none;
+background:white;
+width:350px;
+margin:30px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+}
+
+.formbox h2{
+text-align:center;
+}
+
+.formbox input{
+width:100%;
+padding:8px;
+margin:6px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.submitbtn{
+background:#25D366;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+
+<script>
+
+function showCategory(cat){
+
+document.getElementById("blouse").style.display="none"
+document.getElementById("kurthi").style.display="none"
+document.getElementById("longfrock").style.display="none"
+document.getElementById("shortfrock").style.display="none"
+document.getElementById("anarkali").style.display="none"
+
+document.getElementById(cat).style.display="block"
+
+}
+
+function openForm(){
+
+document.getElementById("form").style.display="block"
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:'smooth'
+})
+
+}
+
+function sendWhatsApp(){
+
+var length=document.getElementById("length").value
+var shoulder=document.getElementById("shoulder").value
+var hip=document.getElementById("hip").value
+var hand=document.getElementById("hand").value
+var sleeve=document.getElementById("sleeve").value
+var waist=document.getElementById("waist").value
+var chest=document.getElementById("chest").value
+var middle=document.getElementById("middle").value
+var chestpoint=document.getElementById("chestpoint").value
+var neckf=document.getElementById("neckf").value
+var neckb=document.getElementById("neckb").value
+
+var message="New Stitching Order:%0A"+
+"Length: "+length+"%0A"+
+"Shoulder: "+shoulder+"%0A"+
+"Hip: "+hip+"%0A"+
+"Hand Length: "+hand+"%0A"+
+"Sleeve Length: "+sleeve+"%0A"+
+"Waist: "+waist+"%0A"+
+"Chest: "+chest+"%0A"+
+"Middle Chest: "+middle+"%0A"+
+"Chest Point: "+chestpoint+"%0A"+
+"Neck Length Front: "+neckf+"%0A"+
+"Neck Length Back: "+neckb
+
+window.open("https://wa.me/916302874225?text="+message)
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+Madhavi Ladies Boutique
+
+
+</header>
+
+<section class="hero">
+<img src="hero.jpg.jpeg" alt="Boutique Banner">
+</section>
+
+
+<div class="categories">
+
+<button onclick="showCategory('blouse')">Blouse</button>
+
+<button onclick="showCategory('kurthi')">Kurthi</button>
+
+<button onclick="showCategory('longfrock')">Long Frocks</button>
+
+<button onclick="showCategory('shortfrock')">Short Frocks</button>
+
+<button onclick="showCategory('anarkali')">Anarkali</button>
+
+</div>
+
+
+<div class="about">
+
+<h2>About Our Boutique</h2>
+
+<p>
+Welcome to Madhavi Ladies Boutique. We specialize in custom stitching for blouses, kurtis,
+frocks and anarkali dresses. Our boutique focuses on perfect fitting, neat finishing,
+and beautiful designs for every occasion. Customers can select their favourite design
+and send their measurements easily for stitching orders.
+</p>
+
+</div>
+
+
+<!-- BLOUSE -->
+
+<div id="blouse" class="gallery">
+
+<img src="https://i.pinimg.com/736x/79/63/ec/7963ecbe5e8f1d4e9026cdd98f30d0d3.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/ce/f2/8b/cef28b4362a9098759912331308e50c8.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/8e/eb/12/8eeb128b27253a4a02968f28fbcf8265.jpg" onclick="openForm()">
+
+</div>
+
+
+<!-- KURTHI -->
+
+<div id="kurthi" class="gallery">
+
+<img src="https://i.pinimg.com/736x/27/10/f0/2710f07b07ef9ce869fcbd518a842b75.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/6d/7e/1b/6d7e1bdeab5643d21310050ad4d88fb2.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/cb/e1/2e/cbe12e9038bbeb97f31cf8bb83da650e.jpg" onclick="openForm()">
+
+</div>
+
+
+<!-- LONG FROCK -->
+
+<div id="longfrock" class="gallery">
+
+<img src="https://i.pinimg.com/736x/7a/d9/2c/7ad92cab3efb591eadf11a4b8b0c90ab.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/d1/63/23/d16323e183a782d75baa3d1de37ba388.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/a2/a0/37/a2a037bc380d19a09435f9488b2cfd91.jpg" onclick="openForm()">
+
+</div>
+
+
+<!-- SHORT FROCK -->
+
+<div id="shortfrock" class="gallery">
+
+<img src="https://i.pinimg.com/736x/90/00/b3/9000b30037b41a6920e09f38529e77e3.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/c0/c7/ad/c0c7ad4db0592f96a4ac172081663314.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/32/44/ca/3244cabf79dbcacb7dfd542d1c4c0a32.jpg" onclick="openForm()">
+
+</div>
+
+
+<!-- ANARKALI -->
+
+<div id="anarkali" class="gallery">
+
+<img src="https://i.pinimg.com/736x/a4/07/db/a407db614ab3bb5509986576ad0bdf17.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/28/34/78/283478e19f299bdd2978cd331a9b13bb.jpg" onclick="openForm()">
+<img src="https://i.pinimg.com/736x/9a/9d/7b/9a9d7b821af1479b382fdf00a365a9bb.jpg" onclick="openForm()">
+
+</div>
+
+
+<div id="form" class="formbox">
+
+<h2>Enter Measurements</h2>
+
+<input id="length" placeholder="Length">
+<input id="shoulder" placeholder="Shoulder">
+<input id="hip" placeholder="Hip">
+<input id="hand" placeholder="Hand Length">
+<input id="sleeve" placeholder="Sleeve Length">
+<input id="waist" placeholder="Waist">
+<input id="chest" placeholder="Chest">
+<input id="middle" placeholder="Middle Chest">
+<input id="chestpoint" placeholder="Chest Point">
+<input id="neckf" placeholder="Neck Length Front">
+<input id="neckb" placeholder="Neck Length Back">
+
+<button class="submitbtn" onclick="sendWhatsApp()">Submit & Contact</button>
+
+</div>
+
+</body>
+</html>
