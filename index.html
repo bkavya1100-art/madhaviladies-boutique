@@ -152,13 +152,14 @@ document.getElementById(cat).style.display="block"
 }
 
 function openForm(){
-
-document.getElementById("form").style.display="block"
-
+  
+document.getElementById("form").style.display="block";
+document.getElementById("form").scrollIntoView({behavior:"smooth"});
+  
 window.scrollTo({
 top:document.body.scrollHeight,
 behavior:'smooth'
-})
+});
 
 }
 
@@ -315,5 +316,6 @@ and send their measurements easily for stitching orders.
 </body>
 
 </html>
+
 
 
