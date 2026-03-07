@@ -152,14 +152,13 @@ document.getElementById(cat).style.display="block"
 }
 
 function openForm(){
-  
-document.getElementById("form").style.display="block";
-document.getElementById("form").scrollIntoView({behavior:"smooth"});
-  
+
+document.getElementById("form").style.display="block"
+
 window.scrollTo({
 top:document.body.scrollHeight,
 behavior:'smooth'
-});
+})
 
 }
 
@@ -214,11 +213,15 @@ Madhavi Ladies Boutique
 
 <div class="categories">
 
-<button onclick="showCategory('blouse'); openForm()">Blouse</button>
-<button onclick="showCategory('kurthi'); openForm()">Kurthi</button>
-<button onclick="showCategory('longfrock'); openForm()">Long Frocks</button>
-<button onclick="showCategory('shortfrock'); openForm()">Short Frocks</button>
-<button onclick="showCategory('anarkali'); openForm()">Anarkali</button>
+<button onclick="showCategory('blouse')">Blouse</button>
+
+<button onclick="showCategory('kurthi')">Kurthi</button>
+
+<button onclick="showCategory('longfrock')">Long Frocks</button>
+
+<button onclick="showCategory('shortfrock')">Short Frocks</button>
+
+<button onclick="showCategory('anarkali')">Anarkali</button>
 
 </div>
 
@@ -289,8 +292,7 @@ and send their measurements easily for stitching orders.
 <img src="https://i.pinimg.com/736x/28/34/78/283478e19f299bdd2978cd331a9b13bb.jpg" onclick="openForm()">
 <img src="https://i.pinimg.com/736x/9a/9d/7b/9a9d7b821af1479b382fdf00a365a9bb.jpg" onclick="openForm()">
 
-<div style="text-align:center; margin:30px;">
-  <img src="logo.png" width="250" alt="Madhavi Ladies Boutique">
+</div>
 
 
 <div id="form" class="formbox">
@@ -314,8 +316,4 @@ and send their measurements easily for stitching orders.
 </div>
 
 </body>
-
 </html>
-
-
-
