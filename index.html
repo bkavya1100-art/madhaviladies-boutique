@@ -204,18 +204,19 @@ var chestpoint=document.getElementById("chestpoint").value
 var neckf=document.getElementById("neckf").value
 var neckb=document.getElementById("neckb").value
 
-var message="New Stitching Order:%0A"+
-"Length: "+length+"%0A"+
-"Shoulder: "+shoulder+"%0A"+
-"Hip: "+hip+"%0A"+
-"Hand Length: "+hand+"%0A"+
-"Sleeve Length: "+sleeve+"%0A"+
-"Waist: "+waist+"%0A"+
-"Chest: "+chest+"%0A"+
-"Middle Chest: "+middle+"%0A"+
-"Chest Point: "+chestpoint+"%0A"+
-"Neck Length Front: "+neckf+"%0A"+
-"Neck Length Back: "+neckb
+var message="New Stitching Order:%0A"
+
+if(length) message+="Length: "+length+"%0A"
+if(shoulder) message+="Shoulder: "+shoulder+"%0A"
+if(hip) message+="Hip: "+hip+"%0A"
+if(hand) message+="Hand Length: "+hand+"%0A"
+if(sleeve) message+="Sleeve Length: "+sleeve+"%0A"
+if(waist) message+="Waist: "+waist+"%0A"
+if(chest) message+="Chest: "+chest+"%0A"
+if(middle) message+="Middle Chest: "+middle+"%0A"
+if(chestpoint) message+="Chest Point: "+chestpoint+"%0A"
+if(neckf) message+="Neck Length Front: "+neckf+"%0A"
+if(neckb) message+="Neck Length Back: "+neckb+"%0A"
 
 window.open("https://wa.me/916302874225?text="+message)
 
