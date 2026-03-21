@@ -96,6 +96,37 @@ transition:0.3s;
 transform:scale(1.10);
 }
 
+.gallery img{
+width:150px;
+height:150px;
+object-fit:cover;
+margin:8px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+cursor:pointer;
+
+opacity:0;
+transform:scale(0.8);
+animation:popIn 0.5s forwards;
+}
+
+.gallery img:nth-child(1){animation-delay:0.05s;}
+.gallery img:nth-child(2){animation-delay:0.1s;}
+.gallery img:nth-child(3){animation-delay:0.15s;}
+.gallery img:nth-child(4){animation-delay:0.2s;}
+.gallery img:nth-child(5){animation-delay:0.25s;}
+.gallery img:nth-child(6){animation-delay:0.3s;}
+.gallery img:nth-child(7){animation-delay:0.35s;}
+.gallery img:nth-child(8){animation-delay:0.4s;}
+.gallery img:nth-child(9){animation-delay:0.45s;}
+
+@keyframes popIn{
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
 /* FORM */
 
 .formbox{
